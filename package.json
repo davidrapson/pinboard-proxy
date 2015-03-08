@@ -1,0 +1,17 @@
+{
+  "name": "pinboard-proxy",
+  "version": "1.0.0",
+  "description": "Pinboard proxy",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "David Rapson",
+  "license": "ISC",
+  "dependencies": {
+    "apicache": "0.0.12",
+    "es6-promise": "^2.0.1",
+    "express": "^4.12.2"
+  }
+}
