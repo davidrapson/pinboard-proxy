@@ -18,7 +18,7 @@ app.get('/',
                 'auth_token': AUTH_TOKEN,
                 'format': 'json',
                 'shared': 'yes',
-                'tag': req.query.tag || 'liked'
+                'tag': req.query.tag
             })
         }).then(function(data) {
             res.header('Access-Control-Allow-Origin', '*');
