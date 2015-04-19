@@ -29,4 +29,7 @@ app.get('/',
 
 app.listen(app.get('port'), function() {
     console.log("App is running at localhost:" + app.get('port'));
+    if(!AUTH_TOKEN) {
+        console.warn("\nERROR: You need to define a AUTH_TOKEN environment variable.\n");
+    }
 });
