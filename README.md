@@ -2,9 +2,6 @@
 
 A dumb proxy server for [Pinboard](https://pinboard.in/) to return public tagged items for a given account.
 
-`/?tag=likes`
-
-
 ## Getting Started
 
 Install dependencies
@@ -12,7 +9,7 @@ Install dependencies
 npm install
 ```
 
-You'll set an environment variable with your auth token:
+You'll set an environment variable with your [auth token](https://pinboard.in/api#authentication):
 ``` sh
 export AUTH_TOKEN="MYAUTHTOKEN"
 ```
