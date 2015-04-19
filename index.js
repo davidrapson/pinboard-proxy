@@ -16,15 +16,15 @@ app.use(function(req, res, next) {
 });
 
 app.get('/',
-    apicache('5 minutes'),
+    apicache('60 minutes'),
     function (req, res) {
         requestPromise({
             hostname: 'api.pinboard.in',
             path: '/v1/posts/all?' + queryString.stringify({
                 'auth_token': PINBOARD_AUTH_TOKEN,
                 'format': 'json',
-                'shared': 'yes',
-                'tag': req.query.tag
+                'tag': req.query.tag,
+                'shared': 'yes'
             })
         }).then(function(data) {
             res.set('Content-Type', 'application/json');
