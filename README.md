@@ -13,9 +13,9 @@ Install dependencies
 npm install
 ```
 
-You'll set an environment variable with your [auth token](https://pinboard.in/api#authentication):
+You'll set an environment variable with your [API token](https://pinboard.in/api#authentication):
 ``` sh
-export PINBOARD_AUTH_TOKEN="MYAUTHTOKEN"
+export PINBOARD_API_TOKEN="MYAPIOKEN"
 ```
 
 Start the server
@@ -27,4 +27,4 @@ npm start
 
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
-You will still need to configure the `PINBOARD_AUTH_TOKEN` environment variable in with your Pinboard API key but Heroku kindly asks you to provide one during the setup process.
+You will still need to configure the `PINBOARD_API_TOKEN` environment variable in with your Pinboard API key but Heroku kindly asks you to provide one during the setup process.
