@@ -11,7 +11,7 @@ npm install
 
 You'll set an environment variable with your [auth token](https://pinboard.in/api#authentication):
 ``` sh
-export AUTH_TOKEN="MYAUTHTOKEN"
+export PINBOARD_AUTH_TOKEN="MYAUTHTOKEN"
 ```
 
 Start the server

@@ -5,7 +5,7 @@ var requestPromise = require('./lib/requestPromise');
 
 var app = express();
 
-var AUTH_TOKEN = process.env.AUTH_TOKEN;
+var PINBOARD_AUTH_TOKEN = process.env.PINBOARD_AUTH_TOKEN;
 
 app.set('port', (process.env.PORT || 8000));
 
@@ -15,7 +15,7 @@ app.get('/',
         requestPromise({
             hostname: 'api.pinboard.in',
             path: '/v1/posts/all?' + queryString.stringify({
-                'auth_token': AUTH_TOKEN,
+                'auth_token': PINBOARD_AUTH_TOKEN,
                 'format': 'json',
                 'shared': 'yes',
                 'tag': req.query.tag
@@ -29,7 +29,7 @@ app.get('/',
 
 app.listen(app.get('port'), function() {
     console.log("App is running at localhost:" + app.get('port'));
-    if(!AUTH_TOKEN) {
-        console.warn("\nERROR: You need to define a AUTH_TOKEN environment variable.\n");
+    if(!PINBOARD_AUTH_TOKEN) {
+        console.warn("\nERROR: You need to define a PINBOARD_AUTH_TOKEN environment variable.\n");
     }
 });
