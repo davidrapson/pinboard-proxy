@@ -12,6 +12,7 @@
   "dependencies": {
     "apicache": "0.0.12",
     "es6-promise": "^2.0.1",
-    "express": "^4.12.2"
+    "express": "^4.12.2",
+    "query-string": "^1.0.0"
   }
 }
