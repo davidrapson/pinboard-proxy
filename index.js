@@ -9,6 +9,12 @@ var PINBOARD_AUTH_TOKEN = process.env.PINBOARD_AUTH_TOKEN;
 
 app.set('port', (process.env.PORT || 8000));
 
+app.use(function(req, res, next) {
+    res.header('Access-Control-Allow-Origin', '*');
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
+});
+
 app.get('/',
     apicache('60 minutes'),
     function (req, res) {
@@ -21,7 +27,6 @@ app.get('/',
                 'tag': req.query.tag
             })
         }).then(function(data) {
-            res.header('Access-Control-Allow-Origin', '*');
             res.set('Content-Type', 'application/json');
             res.send(data);
         });
