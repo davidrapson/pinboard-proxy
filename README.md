@@ -27,4 +27,4 @@ npm start
 
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
-You will still need to configure the `PINBOARD_AUTH_TOKEN` in your Heroku dashboard with your Pinboard API key.
+You will still need to configure the `PINBOARD_AUTH_TOKEN` environment variable in with your Pinboard API key but Heroku kindly asks you to provide one during the setup process.
