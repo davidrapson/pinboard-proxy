@@ -9,6 +9,9 @@
   "website": "https://davidrapson.co.uk/",
   "repository": "https://github.com/davidrapson/pinboard-proxy",
   "env": {
-    "PINBOARD_AUTH_TOKEN": ""
+    "PINBOARD_AUTH_TOKEN": {
+      "description": "Pinboard API token, you can find yours at https://pinboard.in/settings/password",
+      "value": ""
+    }
   }
 }
