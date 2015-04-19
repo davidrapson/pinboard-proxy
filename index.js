@@ -16,7 +16,7 @@ app.use(function(req, res, next) {
 });
 
 app.get('/',
-    apicache('60 minutes'),
+    apicache('5 minutes'),
     function (req, res) {
         requestPromise({
             hostname: 'api.pinboard.in',
