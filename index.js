@@ -23,9 +23,12 @@ app.get('/',
             path: '/v1/posts/all?' + queryString.stringify({
                 'auth_token': PINBOARD_AUTH_TOKEN,
                 'format': 'json',
-                'tag': req.query.tag,
-                'shared': 'yes'
+                'tag': req.query.tag
             })
+        }).then(function(data) {
+            return JSON.parse(data).filter(function (item) {
+                return (item.shared === 'yes') ? item : false;
+            });
         }).then(function(data) {
             res.set('Content-Type', 'application/json');
             res.send(data);
