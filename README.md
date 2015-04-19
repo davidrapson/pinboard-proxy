@@ -22,3 +22,9 @@ Start the server
 ``` sh
 npm start
 ```
+
+## Deploy to Heroku
+
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+
+You will still need to configure the `PINBOARD_AUTH_TOKEN` in your Heroku dashboard with your Pinboard API key.

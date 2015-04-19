@@ -1,0 +1,14 @@
+{
+  "name": "Pinboard Proxy",
+  "description": "A dumb proxy server for Pinboard to return public tagged items for a given account.",
+  "keywords": [
+    "pinboard",
+    "express",
+    "node"
+  ],
+  "website": "https://davidrapson.co.uk/",
+  "repository": "https://github.com/davidrapson/pinboard-proxy",
+  "env": {
+    "PINBOARD_AUTH_TOKEN": ""
+  }
+}
