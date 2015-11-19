@@ -4,7 +4,7 @@ A dumb proxy server for [Pinboard](https://pinboard.in/) to return public tagged
 
 ## Demo
 
-You can see an example at [http://davidrapson-pinboard-proxy.herokuapp.com/?tag=professional-cannon]() where `?tag=` is any public tag available at [https://pinboard.in/u:davidrapson/]()
+You can see an example at http://davidrapson-pinboard-proxy.herokuapp.com/?tag=professional-cannon where `?tag=` is any public tag available at https://pinboard.in/u:davidrapson/
 
 ## Getting Started
 
