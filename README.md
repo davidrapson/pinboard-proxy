@@ -10,7 +10,7 @@ Install dependencies:
 npm install
 ```
 
-You'll nned an environment variable with your [API token](https://pinboard.in/api#authentication):
+You'll need an environment variable with your [API token](https://pinboard.in/api#authentication):
 
 ``` sh
 export PINBOARD_API_TOKEN="MYAPIOKEN"
