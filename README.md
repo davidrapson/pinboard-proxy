@@ -1,6 +1,6 @@
 # Pinboard Proxy
 
-A dumb proxy server for [Pinboard](https://pinboard.in/) to return public tagged items for a given account.
+A proxy server for [Pinboard](https://pinboard.in/) to return public tagged items for a given account.
 
 ## Demo
 
